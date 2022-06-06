@@ -93,7 +93,7 @@ export async function login(
   return new TPLink(token, termid);
 }
 
-export default class TPLink {
+export class TPLink {
   token: string;
   termid: string;
   deviceList: any[];
