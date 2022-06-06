@@ -7,7 +7,7 @@
  */
 import hs100 from "./hs100";
 import HS300child from "./hs300child";
-import TPLink from "./tplink";
+import { TPLink } from "./tplink";
 export default class HS300 extends hs100 {
     children: any[];
     tpLink: TPLink;

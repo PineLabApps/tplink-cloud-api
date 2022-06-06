@@ -22,13 +22,13 @@ tplink-cloud-api. If not, see http://www.gnu.org/licenses/. */
 
 import hs100 from "./hs100";
 import HS300child from "./hs300child";
-import TPLink from "./tplink";
+import { TPLink } from "./tplink";
 
 export default class HS300 extends hs100 {
   children: any[];
   tpLink: TPLink;
 
-  constructor(tpLink:TPLink, deviceInfo) {
+  constructor(tpLink: TPLink, deviceInfo) {
     super(tpLink, deviceInfo);
     this.tpLink = tpLink;
     this.genericType = "switch";

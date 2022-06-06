@@ -46,7 +46,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.login = void 0;
+exports.TPLink = exports.login = void 0;
 /* This file is part of tplink-cloud-api.
 
 tplink-cloud-api is free software: you can redistribute it and/or modify it
@@ -270,5 +270,5 @@ var TPLink = /** @class */ (function () {
     };
     return TPLink;
 }());
-exports.default = TPLink;
+exports.TPLink = TPLink;
 //# sourceMappingURL=tplink.js.map

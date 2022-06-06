@@ -5,7 +5,7 @@
  * @license     https://www.gnu.org/licenses/gpl-3.0.txt
  * @link        http://itnerd.space
  */
-import tplink from "./tplink";
+import { TPLink } from "./tplink";
 export interface TPLinkDeviceInfo {
     fwVer: string;
     alias: string;
@@ -22,7 +22,7 @@ export default class TPLinkDevice {
     genericType: string;
     device: TPLinkDeviceInfo;
     private params;
-    constructor(tpLink: tplink, deviceInfo: TPLinkDeviceInfo);
+    constructor(tpLink: TPLink, deviceInfo: TPLinkDeviceInfo);
     get firmwareVersion(): string;
     get role(): string;
     get mac(): string;

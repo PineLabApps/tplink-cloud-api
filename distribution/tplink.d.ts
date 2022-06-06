@@ -14,7 +14,7 @@ import lb100 from "./lb100";
 import lb120 from "./lb120";
 import lb130 from "./lb130";
 export declare function login(user: string, passwd: string, termid?: string): Promise<TPLink>;
-export default class TPLink {
+export declare class TPLink {
     token: string;
     termid: string;
     deviceList: any[];

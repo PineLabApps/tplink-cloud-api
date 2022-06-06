@@ -21,7 +21,7 @@ You should have received a copy of the GNU General Public License along with
 tplink-cloud-api. If not, see http://www.gnu.org/licenses/. */
 
 import axios from "axios";
-import tplink from "./tplink";
+import { TPLink } from "./tplink";
 import { checkError } from "./api-utils";
 
 export interface TPLinkDeviceInfo {
@@ -42,7 +42,7 @@ export default class TPLinkDevice {
   device: TPLinkDeviceInfo;
   private params: any;
 
-  constructor(tpLink: tplink, deviceInfo: TPLinkDeviceInfo) {
+  constructor(tpLink: TPLink, deviceInfo: TPLinkDeviceInfo) {
     if (!tpLink) {
       throw new Error("missing required parameter tpLink");
     } else if (!deviceInfo) {
